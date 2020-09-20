@@ -62,6 +62,7 @@ public class MainClass {
         ArrayList<PhoneBook> result = new ArrayList<>();
         Iterator<PhoneBook> pb = phoneBook.iterator();
         while (pb.hasNext()){
+
             PhoneBook user = pb.next();
             if(user.getLastName().equals(lastName))
                 result.add(new PhoneBook(user.getLastName(), user.getPhoneNumber()));
